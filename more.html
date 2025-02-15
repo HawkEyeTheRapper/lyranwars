@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>More - Lyran Wars</title>
+  <title>Lyran Wars - More to Come</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      color: white;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #FFD700;
+      text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
       background: url('background_image.jpeg') no-repeat center center fixed;
       background-size: cover;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       overflow: hidden;
-      padding: 2rem;
     }
     .overlay {
       position: absolute;
@@ -21,99 +26,77 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.6);
       z-index: 1;
     }
     .content {
       position: relative;
       z-index: 2;
+      padding: 1rem;
       max-width: 90%;
-      margin: auto;
       text-align: center;
-      padding: 1.5rem;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
-      text-shadow: 0 0 15px #ffcc00;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 20px #FFD700, 0 0 30px #FFA500, 0 0 40px #FFA500;
+      }
+      to {
+        text-shadow: 0 0 30px #FFD700, 0 0 40px #FFA500, 0 0 50px #FFA500;
+      }
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       line-height: 1.8;
       margin-bottom: 1.5rem;
     }
-    .image-container {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .image-container img {
-      width: 90%;
-      max-width: 800px;
+    img {
+      max-width: 80%;
+      height: auto;
+      margin: 1rem 0;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
     }
-    .link-container {
-      margin-top: 2rem;
-    }
-    .link-container a {
-      display: inline-block;
-      color: #ffcc00;
-      font-size: 1.2rem;
+    a {
+      color: #FFD700;
       text-decoration: none;
+      font-size: 1.2rem;
       font-weight: bold;
-      padding: 10px 20px;
-      border: 2px solid #ffcc00;
-      border-radius: 5px;
-      transition: all 0.3s ease-in-out;
+      transition: color 0.3s, text-shadow 0.3s;
     }
-    .link-container a:hover {
-      background: #ffcc00;
-      color: black;
-      text-shadow: none;
+    a:hover {
+      color: #FFA500;
+      text-shadow: 0 0 10px #FFA500;
     }
-    footer {
-      margin-top: 3rem;
-      padding: 1rem;
-      text-align: center;
+    .footer {
+      margin-top: 30px;
     }
-    footer img {
-      width: 70px;
-      opacity: 0.8;
-      transition: transform 0.3s;
-    }
-    footer img:hover {
-      transform: scale(1.1);
+    .footer img {
+      width: 60px;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
   <div class="content">
-    <h1>The Secrets of Lyran Wars</h1>
-    <p>Explore the **forbidden archives** of ancient star wars between the Lyran factions and Draconian control structures. 
-      This knowledge, long suppressed, is now coming to the surface.</p>
-
-    <div class="image-container">
-      <img src="image1.jpeg" alt="Lyran Database">
-    </div>
-
-    <p>For further exploration of **exfiltration strategies**, visit:</p>
-    <div class="link-container">
-      <a href="https://archangel.agency/ti-exfiltration-initiative/" target="_blank">Archangel Agency - TI Exfiltration</a>
-    </div>
-
-    <p>Continue your journey through the **Omniversal Network**:</p>
-    <div class="link-container">
-      <a href="index.html">Back to Main Page</a>
-      <a href="https://cradleoflyra.com" target="_blank">Cradle of Lyra</a>
-      <a href="https://omniversalmedia.net" target="_blank">Omniversal Media</a>
-    </div>
+    <h1>More to Come...</h1>
+    <p>These archives are still being decrypted. The hidden truths of the Lyran Wars and beyond are being restored.<br>
+       Check back soon as more suppressed records come to light.</p>
+    <img src="image1.jpeg" alt="Ancient Lyran Knowledge" />
+    <img src="image2.jpeg" alt="Galactic Records" />
+    <p><a href="index.html">Return to Main Page</a></p>
   </div>
-
-  <footer>
-    <a href="https://omniversalmedia.net" target="_blank">
-      <img src="omniversal_symbol.jpeg" alt="Omniversal Symbol">
-    </a>
+  <footer class="footer">
+    <a href="https://omniversalmedia.net"><img src="omniversal_symbol.jpeg" alt="Omniversal Symbol"></a>
+    <p>
+      <a href="https://cradleoflyra.com">Cradle of Lyra</a> | 
+      <a href="https://archangel.agency/ti-exfiltration-initiative/">Archangel Agency</a>
+    </p>
   </footer>
 </body>
 </html>
