@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the lost archives of the Lyran Wars—uncover ancient suppressed knowledge of galactic history.">
   <title>Lyran Wars - The Lost Archives</title>
   <style>
     body {
@@ -19,7 +18,7 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
-      overflow: hidden;
+      overflow: auto; /* Enables scrolling on mobile */
     }
     .overlay {
       position: absolute;
@@ -52,11 +51,11 @@
     }
     p {
       font-size: 1.3rem;
-      line-height: 2;
-      margin-bottom: 2rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
     }
     img {
-      max-width: 80%;
+      max-width: 90%;
       height: auto;
       margin: 1rem 0;
       border-radius: 10px;
@@ -77,12 +76,8 @@
       margin-top: 30px;
     }
     .footer img {
-      width: 80px;
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-    }
-    .footer img:hover {
-      opacity: 0.9;
+      width: 60px;
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -92,8 +87,8 @@
     <h1>Lyran Wars - The Lost Archives</h1>
     <p>The forgotten records of the ancient wars between the Lyran and Draconian factions, buried beneath the veil of time.<br>
        Access the archives, uncover the suppressed knowledge, and reclaim our galactic heritage.</p>
-    <img src="image1.jpeg" alt="Lyran War Data - Suppressed Galactic Records" loading="lazy" />
-    <img src="image2.jpeg" alt="Ancient Records of Lyran and Draconian Conflict" loading="lazy" />
+    <img src="image1.jpeg" alt="Lyran War Data" />
+    <img src="image2.jpeg" alt="Ancient Records" />
     <p><a href="more.html">More to Come...</a></p>
   </div>
   <footer class="footer">
