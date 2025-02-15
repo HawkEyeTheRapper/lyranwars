@@ -16,9 +16,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       height: 100vh;
-      overflow: auto; /* Enables scrolling on mobile */
+      overflow-y: auto;
+      padding-top: 20px;
     }
     .overlay {
       position: absolute;
@@ -55,7 +56,7 @@
       margin-bottom: 1.5rem;
     }
     img {
-      max-width: 90%;
+      max-width: 80%;
       height: auto;
       margin: 1rem 0;
       border-radius: 10px;
@@ -77,7 +78,7 @@
     }
     .footer img {
       width: 60px;
-      opacity: 0.8;
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -85,10 +86,10 @@
   <div class="overlay"></div>
   <div class="content">
     <h1>These archives are still being decrypted.</h1>
-    <p>The hidden truths of the Lyran Wars and beyond are being restored. <br>
+    <img src="image1.jpeg" alt="Lyran Archive Data" />
+    <p>The hidden truths of the Lyran Wars and beyond are being restored.<br>
        Check back soon as more suppressed records come to light.</p>
-    <img src="image1.jpeg" alt="Lyran War Data" />
-    <img src="image2.jpeg" alt="Ancient Records" />
+    <img src="image2.jpeg" alt="Ancient Knowledge" />
     <p><a href="index.html">Return to Main Page</a></p>
   </div>
   <footer class="footer">
